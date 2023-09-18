@@ -104,6 +104,18 @@ export class App {
     }
 
 
+
+    async updateLocBike(bike: Bike, newLocBike: string) {
+        const bikeToUpdate = this.bikes.find(b => b.id === bike.id);
+        if (bikeToUpdate) {
+            bikeToUpdate.updateLocBike(newLocBike);
+        } else {
+            throw new Error('Não consegui :(.');
+        }
+    }
+    
+
+
 }
 
         // for(const rUser of this.users){
