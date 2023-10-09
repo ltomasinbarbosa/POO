@@ -127,7 +127,6 @@ function diffHours(dt2: Date, dt1: Date) {
   diff /= (60 * 60);
   return Math.abs(diff);
 }
-
         // for(const rUser of this.users){
         //     if(rUser.email === user.email){
         //         throw new Error('Duplicate user.')
